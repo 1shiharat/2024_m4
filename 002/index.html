@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>【公式】展示会向けデジタルサイネージシステム</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Metaタグの追加 -->
+    <meta name="description" content="最新の展示会向けデジタルサイネージシステムで、来場者の目を引く効果的なプロモーションを実現します。">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header>
+        <div class="header-inner">
+            <img src="logo.svg" alt="システムロゴ" class="logo" width="300">
+            <nav>
+                <ul>
+                    <li><a href="#features">特徴</a></li>
+                    <li><a href="#gallery">操作例</a></li>
+                    <li><a href="#contact">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- メインビジュアル -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>展示会の可能性を広げる<br>最新デジタルサイネージシステム</h1>
+            <p>来場者の興味を最大限に引き出し、効果的な情報発信をサポートします。</p>
+            <a href="#contact" class="cta-button">今すぐお問い合わせ</a>
+        </div>
+        <div class="hero-image">
+            <img src="hero-image.jpg" alt="デジタルサイネージのイメージ">
+        </div>
+    </section>
+
+    <!-- システムの特徴 -->
+    <section class="features" id="features">
+        <h2>選ばれる理由</h2>
+        <p>多くの展示会で導入されている理由をご紹介します。</p>
+        <div class="feature-list">
+            <div class="feature-item">
+                <img src="images/feature1.png" alt="簡単操作">
+                <h3>直感的な簡単操作</h3>
+                <p>専門知識がなくても誰でも簡単に操作できます。</p>
+            </div>
+            <div class="feature-item">
+                <img src="images/feature2.png" alt="多機能性">
+                <h3>多彩な機能</h3>
+                <p>動画再生、インタラクティブコンテンツなど豊富な機能を搭載。</p>
+            </div>
+            <div class="feature-item">
+                <img src="images/feature3.png" alt="カスタマイズ可能">
+                <h3>柔軟なカスタマイズ</h3>
+                <p>御社のニーズに合わせてシステムを最適化します。</p>
+            </div>
+            <div class="feature-item">
+                <img src="images/feature4.png" alt="高い拡張性">
+                <h3>高い拡張性</h3>
+                <p>将来の機能追加や連携にも柔軟に対応。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 操作例の紹介 -->
+    <section class="gallery" id="gallery">
+        <h2>操作イメージ</h2>
+        <p>実際の操作画面をご覧ください。</p>
+        <div class="video-container">
+            <video src="videos/demo.mp4" controls poster="images/video-poster.png"></video>
+        </div>
+    </section>
+
+    <!-- お客様の声（追加コンテンツ） -->
+    <section class="testimonials">
+        <h2>導入事例</h2>
+        <div class="testimonial-list">
+            <div class="testimonial-item">
+                <p>"このシステムのおかげで来場者の反応が格段に良くなりました。"</p>
+                <h4>〇〇展示会運営会社様</h4>
+            </div>
+            <div class="testimonial-item">
+                <p>"操作が簡単でスタッフの教育コストが削減できました。"</p>
+                <h4>△△企業様</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- 問い合わせフォーム -->
+    <section class="contact" id="contact">
+        <h2>お問い合わせ</h2>
+        <p>システムの詳細や導入については、以下のフォームよりお問い合わせください。</p>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">お名前<span>*</span></label>
+                <input type="text" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="company">会社名</label>
+                <input type="text" name="company">
+            </div>
+            <div class="form-group">
+                <label for="email">メールアドレス<span>*</span></label>
+                <input type="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">電話番号</label>
+                <input type="tel" name="phone">
+            </div>
+            <div class="form-group">
+                <label for="message">お問い合わせ内容<span>*</span></label>
+                <textarea name="message" required></textarea>
+            </div>
+            <button type="submit" class="cta-button">送信する</button>
+        </form>
+    </section>
+
+    <!-- フッター -->
+    <footer>
+        <div class="footer-inner">
+            <img src="logo.svg" alt="システムロゴ" class="logo">
+            <p>&copy; 2023 展示会デジタルサイネージシステム</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // フォーム送信時のアラート表示
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('お問い合わせありがとうございます。');
+        });
+    </script>
+</body>
+</html>

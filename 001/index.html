@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>展示会向けデジタルサイネージシステム</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <img src="logo.svg" alt="デジタルサイネージシステムロゴ" class="header__logo">
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="#features" class="header__nav-link">特徴</a></li>
+                    <li class="header__nav-item"><a href="#demo" class="header__nav-link">デモ</a></li>
+                    <li class="header__nav-item"><a href="#api" class="header__nav-link">API</a></li>
+                    <li class="header__nav-item"><a href="#contact" class="header__nav-link">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero__title">展示会を革新する<br>デジタルサイネージシステム</h1>
+                <p class="hero__text">来場者の体験を向上させ、展示会の価値を最大化します</p>
+                <a href="#contact" class="button button--cta">今すぐ問い合わせ</a>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="container">
+                <h2 class="section__title">システムの特徴</h2>
+                <div class="features__grid">
+                    <div class="feature-card">
+                        <img src="feature001.webp" alt="リアルタイム更新アイコン" class="feature-card__icon">
+                        <h3 class="feature-card__title">リアルタイム更新</h3>
+                        <p class="feature-card__text">最新の展示情報をリアルタイムで表示し、来場者に最新情報を提供します。</p>
+                    </div>
+                    <div class="feature-card">
+                        <img src="feature002.webp" alt="インタラクティブマップアイコン" class="feature-card__icon">
+                        <h3 class="feature-card__title">インタラクティブマップ</h3>
+                        <p class="feature-card__text">来場者が簡単に目的地を見つけられる、直感的な操作のマップを提供します。</p>
+                    </div>
+                    <div class="feature-card">
+                        <img src="feature003.webp" alt="多言語対応アイコン" class="feature-card__icon">
+                        <h3 class="feature-card__title">多言語対応</h3>
+                        <p class="feature-card__text">複数の言語に対応し、国際的な展示会でも活用できます。</p>
+                    </div>
+                    <div class="feature-card">
+                        <img src="feature004.webp" alt="データ分析アイコン" class="feature-card__icon">
+                        <h3 class="feature-card__title">データ分析</h3>
+                        <p class="feature-card__text">来場者の行動データを収集・分析し、展示会の改善に役立てます。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="demo" class="demo">
+            <div class="container">
+                <h2 class="section__title">システム操作例</h2>
+                <div class="demo__video-wrapper">
+                    <video controls class="demo__video">
+                        <source src="demo-video.mp4" type="video/mp4">
+                        お使いのブラウザは動画再生に対応していません。
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <section id="api" class="api">
+            <div class="container">
+                <h2 class="section__title">API機能</h2>
+                <p class="api__description">当システムのAPIを活用することで、さまざまなアプリケーションやサービスと連携が可能です。</p>
+                <div class="api__features">
+                    <div class="api-card">
+                        <h3 class="api-card__title">イベントデータ提供</h3>
+                        <p class="api-card__text">展示会のスケジュールや出展者情報をリアルタイムで取得できます。</p>
+                    </div>
+                    <div class="api-card">
+                        <h3 class="api-card__title">スポット情報連携</h3>
+                        <p class="api-card__text">会場内の各スポットの混雑状況や待ち時間情報を取得・更新できます。</p>
+                    </div>
+                    <div class="api-card">
+                        <h3 class="api-card__title">カスタム連携</h3>
+                        <p class="api-card__text">お客様のニーズに合わせた柔軟なAPI連携が可能です。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section__title">お問い合わせ</h2>
+                <form class="contact-form">
+                    <div class="contact-form__group">
+                        <label class="contact-form__label" for="name">お名前</label>
+                        <input type="text" id="name" name="name" class="contact-form__input" required>
+                    </div>
+                    <div class="contact-form__group">
+                        <label class="contact-form__label" for="email">メールアドレス</label>
+                        <input type="email" id="email" name="email" class="contact-form__input" required>
+                    </div>
+                    <div class="contact-form__group">
+                        <label class="contact-form__label" for="message">お問い合わせ内容</label>
+                        <textarea id="message" name="message" class="contact-form__textarea" required></textarea>
+                    </div>
+                    <button type="submit" class="button button--submit">送信</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__copyright">&copy; 2023 デジタルサイネージシステム. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
